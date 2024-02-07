@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>FriendlyLinkup.com</title>
+    <style>
+        .profile-container {
+            display: none; /* Hide the profile section by default */
+        }
+        
+    </style>
+</head>
+
+<body class="pink-theme">
+    <div class="header">
+        <h1>FriendlyLinkup.com</h1>
+        <div class="buttons">
+            <button class="profile-btn button">Profile</button>
+            <button class="info-btn button">Info</button>
+            <button class="home-btn button">Home</button>
+            <button class="settings-btn button">Settings</button>
+        </div>
+    </div>
+
+    <div class="content" id="content">
+        <div class="info-content">
+            <!-- Your existing info content goes here -->
+
+
+            <p>FriendlyLinkup.com is a modern and user-friendly dating app designed to help you find your perfect
+                match and make meaningful connections. Here's what you can expect from our app:</p>
+
+            <ul>
+                <li><strong>Advanced Matching Algorithms:</strong> Our smart algorithms match you with compatible
+                    users based on your preferences and interests.</li>
+                <li><strong>Instant Messaging:</strong> Stay connected with your matches through our real-time
+                    messaging system.</li>
+                <li><strong>Privacy Controls:</strong> Your privacy is important to us. You can customize your
+                    privacy settings and control who can see your profile and messages.</li>
+                <li><strong>Location-Based Search:</strong> Find matches in your area or explore new horizons by
+                    searching in different locations.</li>
+                <li><strong>Profile Customization:</strong> Personalize your profile with photos, interests, and a
+                    bio to showcase your personality.</li>
+            </ul>
+
+            <p>Ready to start your journey to finding love and companionship? Join FriendlyLinkup.com today and
+                discover a world of exciting possibilities!</p>
+
+            <p>If you have any questions or need assistance, feel free to contact our support team. We're here to
+                help!</p>
+        </div>
+
+        <!-- Profile section -->
+        <div class="profile-container">
+            <!-- Profile content goes here -->
+
+            <div>
+                <img src="pic ni charles.png" alt="">
+                <div>
+                    <strong>Name:</strong> Charles Kurais<br>
+                    <strong>Age:</strong> 18<br>
+                    <strong>Gender:</strong> Male<br>
+                    <strong>Location:</strong> Edi sa puso mo<br>
+                    <strong>Occupation:</strong> Palamunin<br>
+                    <strong>Education:</strong> Drop-out kase bagsak ako sa standard mo<br>
+                    <strong>Relationship Status:</strong> Single (ayaw moko i crush back eh)<br>
+                </div>
+        
+                <div class="description">
+                    <strong>About Me:</strong>
+                    <p>
+                        Hello! I'm Charles and i love watching porn and do jabol jabol 5x a day
+                    </p>
+                </div>
+        
+                <div class="interests">
+                    <strong>Interests/Hobbies:</strong> Writing songs, Drinking coffee, Listening to music, Playing Guitar
+                </div>
+        </div>
+    </div>
+
+    <div class="theme-toggle">
+        <label for="theme-switch">Dark Mode:</label>
+        <input type="checkbox" id="theme-switch">
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        // JavaScript code to toggle the visibility of the profile section
+        const profileBtn = document.querySelector('.profile-btn');
+        const profileContainer = document.querySelector('.profile-container');
+
+        profileBtn.addEventListener('click', function() {
+            profileContainer.style.display = (profileContainer.style.display === 'none' || profileContainer.style.display === '') ? 'block' : 'none';
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Motorcycle Booking App</title>
+    <style>
+        body {
+            background-color: #0077b6;
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        .container {
+            width: 60%;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #00b4d8;
+            border-radius: 10px;
+        }
+
+        h1 {
+            color: #00b4d8;
+        }
+
+        input[type="text"], select {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: none;
+            border-radius: 5px;
+        }
+
+        input[type="submit"] {
+            background-color: #48cae4;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0096c7;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Motorcycle Booking</h1>
+        <form action="your-server-script.php" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email" required>
+
+            <label for="phone">Phone:</label>
+            <input type="text" id="phone" name="phone" required>
+
+            <label for="motorcycle">Motorcycle Type:</label>
+            <select id="motorcycle" name="motorcycle">
+                <option value="sports">Sports</option>
+                <option value="cruiser">Cruiser</option>
+                <option value="dirt">Dirt Bike</option>
+            </select>
+
+            <label for="pickup-date">Pickup Date:</label>
+            <input type="date" id="pickup-date" name="pickup-date" required>
+
+            <input type="submit" value="Book Now">
+        </form>
+    </div>
+</body>
+</html>

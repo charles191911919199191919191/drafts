@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>GAGO !!!</title>
+</head>
+<body>
+    <h1>GAGO KA KASI</h1>
+    <div>
+        <textarea id="tweetInput" rows="4" cols="50" placeholder="ANO SAY MO GAGO !!!"></textarea>
+        <button onclick="postTweet()">Tweet</button>
+    </div>
+    <div id="tweetFeed">
+        <!-- Tweet display area -->
+    </div>
+
+    <script>
+        function postTweet() {
+            var tweetText = document.getElementById("tweetInput").value;
+            if (tweetText.trim() !== "") {
+                var tweetElement = document.createElement("p");
+                tweetElement.innerText = tweetText;
+                document.getElementById("tweetFeed").appendChild(tweetElement);
+                document.getElementById("tweetInput").value = "";
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple To-Do List App</title>
+</head>
+<body>
+    <h1>My To-Do List</h1>
+    <input type="text" id="taskInput" placeholder="Enter a task">
+    <button onclick="addTask()">Add Task</button>
+    <ul id="taskList">
+       
+    </ul>
+
+    <script>
+        function addTask() {
+            var taskInput = document.getElementById("taskInput");
+            var taskText = taskInput.value.trim();
+            
+            if (taskText !== "") {
+                var taskList = document.getElementById("taskList");
+                var taskItem = document.createElement("li");
+                taskItem.innerHTML = `<input type="checkbox" onchange="toggleTask(this)"> ${taskText}`;
+                taskList.appendChild(taskItem);
+                taskInput.value = "";
+            }
+        }
+
+        function toggleTask(checkbox) {
+            var taskText = checkbox.nextSibling.textContent;
+            if (checkbox.checked) {
+                checkbox.nextSibling.innerHTML = `<s>${taskText}</s>`;
+            } else {
+                checkbox.nextSibling.textContent = taskText;
+            }
+        }
+    </script>
+</body>
+</html>

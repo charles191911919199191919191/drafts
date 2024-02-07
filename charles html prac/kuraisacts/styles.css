@@ -1,0 +1,19 @@
+body{
+    margin: 80px;
+}
+.text-color{
+    color: #875fd6;
+}
+img{
+    width: 100%;
+    height:50% ;
+}
+.bold{
+    
+        font-weight: bold;
+    
+    
+}
+p{
+    font-family: 'Times New Roman', Times, serif;
+}
